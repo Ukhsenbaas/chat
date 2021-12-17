@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.chatBody{
+    width: 100vw;
+    height: 80vh;
+    background-color: red;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.inputBody{
+    width: 100vw;
+    height: 20vh;
+   display: flex;
+}
+.textInput{
+    height: 100%;
+  flex: 2;
+}
+.sendButton{
+    height: 100%;
+    flex: 1;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
