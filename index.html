@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Chat</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div>
-            <div class="chatBody">
-                <span class="left">zuun tald baina</span>
-                <span class="right"> baruun tald baina </span>
-                <span class="right"> baruun tald baina </span>
-                <span class="left">zuun tald baina</span>
-                <span>hello</span>
-                <span>sda</span>
-                <span>23124234</span>
-                <span>sadasfdsfre</span>
-            </div>
+      <div>
+        <div class="chatBody">
         </div>
-        <div class="inputBody">
-            <input class="textInput" type="text" placeholder="Please write text">
-            <button class="sendButton">Send</button>
-        </div>
+      </div>
+      <div class="inputBody">
+        <input class="textInput" type="text" placeholder="Please write text" />
+        <button class="sendButton" onclick="send()">Send</button>
+      </div>
     </div>
-</body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBUcMRwzHM6UZkaWR7GUnhmEo83U3oRzTg",
+        authDomain: "chat-82ecf.firebaseapp.com",
+        projectId: "chat-82ecf",
+        storageBucket: "chat-82ecf.appspot.com",
+        messagingSenderId: "109020544738",
+        appId: "1:109020544738:web:fc922e9c59a3b6772928bb",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src="./index.js"></script>
+  </body>
 </html>

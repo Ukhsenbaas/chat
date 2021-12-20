@@ -3,10 +3,11 @@ body{
     box-sizing: border-box;
 }
 .chatBody{
-    width: 100vw;
-    height: 80vh;
-    background-color: red;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 5px;
     display: flex;
+    flex-flow: column wrap;
     flex-direction: column-reverse;
 }
 .inputBody{
@@ -24,7 +25,25 @@ body{
 }
 .right{
     text-align: right;
+
 }
 .left{
     text-align: left;
+
+}
+.smsText-right{
+    background-color: #efefef;
+    border-radius: 1em;
+    padding: 0.25em 0.75em;
+    margin: 0.0625em;
+}
+.smsText-left{
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 1em;
+    padding: 0.25em 0.75em;
+    margin: 0.0625em;
+}
+.top{
+    margin: 5px;
 }
